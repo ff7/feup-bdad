@@ -51,15 +51,15 @@ INSERT INTO Carga("ID Medicamento", Quantidade, "ID Carregamento") VALUES (9, 54
 
 -- Data : Carregamento
 
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (1, '2/7/2018,15.30', 147,1)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (2, '1/2/2018,10.30', 169,4)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (3, '1/3/2018,17.00', 1,5)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (4, '2/7/2018,9.30', 47,6)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (5, '3/7/2018,9.35', 17,9)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (6, '15/7/2018,15.30', 149,2)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (7, '2/4/2018,15.30', 247,10)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (8, '23/3/2018,15.30', 947,3)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (9, '21/1/2018,15.30', 647,7)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (1, '201872 3:30:23 PM', 147,1)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (2, '201821 10:30:01 AM', 169,4)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (3, '201831 5:00:59 PM', 1,5)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (4, '201827 9:30:45 AM', 47,6)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (5, '2018130 9:35:20 AM', 17,9)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (6, '2018715 2:37:46 PM', 149,2)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (7, '201842 3:30:27 PM', 247,10)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (8, '2018313 3:27:00 PM', 947,3)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (9, '2018121 6:16:24 PM', 647,7)
 
 -- Data: Cliente
 
@@ -103,6 +103,36 @@ INSERT INTO Fornecedor(ID, "ID Empresa") VALUES (9, 2)
 INSERT INTO Fornecedor(ID, "ID Empresa") VALUES (6, 3)
 INSERT INTO Fornecedor(ID, "ID Empresa") VALUES (5, 4)
 
+-- Data : Transação
 
---falta Venda, Transação, Efeito secundario
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (1, '201842 3:30:27 PM', 'true', 3,6)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (2, '201822 10:30:27 AM', 'false', 1,6)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (3, '2018217 2:16:27 PM', 'true', 4,5)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (4, '201841 11:30:27 AM', 'true', 2,4)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (5, '2018122 3:11:27 PM', 'false', 3,5)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (6, '201842 6:30:22 PM', 'true', 4,6)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (7, '201842 1:10:27 PM', 'false', 2,6)
 
+-- Data : Venda
+
+INSERT INTO Venda ("ID Transação", "ID Medicamento", "No Embalagens") VALUES (1, 8, 2)
+INSERT INTO Venda ("ID Transação", "ID Medicamento", "No Embalagens") VALUES (2, 10, 1)
+INSERT INTO Venda ("ID Transação", "ID Medicamento", "No Embalagens") VALUES (3, 1, 4)
+INSERT INTO Venda ("ID Transação", "ID Medicamento", "No Embalagens") VALUES (4, 4, 1)
+INSERT INTO Venda ("ID Transação", "ID Medicamento", "No Embalagens") VALUES (5, 5, 2)
+INSERT INTO Venda ("ID Transação", "ID Medicamento", "No Embalagens") VALUES (6, 3, 1)
+INSERT INTO Venda ("ID Transação", "ID Medicamento", "No Embalagens") VALUES (7, 7, 1)
+
+-- Data : Efeito secundario
+
+INSERT INTO Efeito secundario (ID, Nome) VALUES (1, 'Diarreia')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (2, 'Febre')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (3, 'Náusea')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (4, 'Reacção alérgica')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (5, 'Sonolência')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (6, 'Tontura')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (7, 'Erupção cutânea')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (8, 'Prisão de Ventre')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (9, 'Vómitos')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (10, 'Fadiga')
+INSERT INTO Efeito secundario (ID, Nome) VALUES (11, 'Insuficiência cardíaca')
