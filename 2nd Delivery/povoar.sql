@@ -51,15 +51,15 @@ INSERT INTO Carga("ID Medicamento", Quantidade, "ID Carregamento") VALUES (9, 54
 
 -- Data : Carregamento
 
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (1, '201872 3:30:23 PM', 147,1)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (2, '201821 10:30:01 AM', 169,4)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (3, '201831 5:00:59 PM', 1,5)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (4, '201827 9:30:45 AM', 47,6)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (5, '2018130 9:35:20 AM', 17,9)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (6, '2018715 2:37:46 PM', 149,2)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (7, '201842 3:30:27 PM', 247,10)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (8, '2018313 3:27:00 PM', 947,3)
-INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (9, '2018121 6:16:24 PM', 647,7)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (1, '2018-07-02 3:30:23 PM', 147,1)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (2, '2018-02-01 10:30:01 AM', 169,4)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (3, '2018-03-01 5:00:59 PM', 1,5)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (4, '2018-02-07 9:30:45 AM', 47,6)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (5, '2018-01-30 9:35:20 AM', 17,9)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (6, '2018-07-15 2:37:46 PM', 149,2)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (7, '2018-04-02 3:30:27 PM', 247,10)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (8, '2018-03-13 3:27:00 PM', 947,3)
+INSERT INTO Carregamento(ID, DataHora, "No Fatura", "ID Fornecedor") VALUES (9, '2018-12-01 6:16:24 PM', 647,7)
 
 -- Data: Cliente
 
@@ -74,7 +74,7 @@ INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (1, 'Alex
 INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (2, 'Lívia Nogueira Moura',912342368, Paredes, 69)
 INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (3, 'Joana Pinto Sousa',912123782, Porto, 42)
 INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (4, 'Bárbara Nogueira de Sousa Rodrigues',91232178, Chaves, 22)
-INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (5, 'Francisco Ademar Freitas Friande',912345678, Chaves, 30)
+INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (5, 'Francisco Ademar Freitas Friande',912375678, Chaves, 30)
 INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (6, 'João Pedro Fidalgo Bandeira',91235638, Chaves, 45)
 INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (7, 'Francisco Ferreira',912345645, Chaves, 46)
 INSERT INTO Pessoa (ID, Nome, "No Telefone", Localidade, Idade) VALUES (8, 'José Manuel Frade',912345768, Chaves, 50)
@@ -105,13 +105,13 @@ INSERT INTO Fornecedor(ID, "ID Empresa") VALUES (5, 4)
 
 -- Data : Transação
 
-INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (1, '201842 3:30:27 PM', 'true', 3,6)
-INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (2, '201822 10:30:27 AM', 'false', 1,6)
-INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (3, '2018217 2:16:27 PM', 'true', 4,5)
-INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (4, '201841 11:30:27 AM', 'true', 2,4)
-INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (5, '2018122 3:11:27 PM', 'false', 3,5)
-INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (6, '201842 6:30:22 PM', 'true', 4,6)
-INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (7, '201842 1:10:27 PM', 'false', 2,6)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (1, '2018-04-02 3:30:27 PM', 'true', 3,6)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (2, '2018-02-22 10:30:27 AM', 'false', 1,6)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (3, '2018-02-17 2:16:27 PM', 'true', 4,5)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (4, '2018-04-01 11:30:27 AM', 'true', 2,4)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (5, '2018-01-22 3:11:27 PM', 'false', 3,5)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (6, '2018-04-02 6:30:22 PM', 'true', 4,6)
+INSERT INTO Transação (ID, DataHora, Receita, "ID Cliente", "ID Farmacêutico") VALUES (7, '2018-04-02 1:10:27 PM', 'false', 2,6)
 
 -- Data : Venda
 
